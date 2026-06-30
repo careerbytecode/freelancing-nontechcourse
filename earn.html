@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Grow &amp; Earn as a Non-Tech Professional - the CareerByteCode creator-economy playbook. 60 visibility plays, a 7-level growth ladder, 15 income streams and the Free to Paid earning model, all on a 30-50% revenue share.">
+<meta property="og:title" content="Grow & Earn - Brand Yourself, Earn More | CareerByteCode">
+<meta property="og:description" content="Turn your skills into visibility, authority and income. 60 visibility plays, the 365-day challenge, a 7-level growth ladder and 15 income streams.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://careerbytecode.github.io/freelancing-nontechcourse/earn.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c1220">
+<link rel="canonical" href="https://careerbytecode.github.io/freelancing-nontechcourse/earn.html">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<title>Grow & Earn - Brand Yourself, Earn More | CareerByteCode</title>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="shared-premium.css">
+<style>
+/* ===== SELF-HOSTED FONTS (Latin subset, variable axes preserved) ===== */
+@font-face{font-family:'Inter';font-style:normal;font-weight:300 800;font-display:optional;src:url('fonts/inter-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 800;font-display:optional;src:url('fonts/jetbrains-mono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+/* ===== HERO ===== */
+.proj-hero{min-height:88vh;padding:0;background:#060d1a;position:relative;overflow:hidden;}
+.proj-hero__content{position:relative;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:88vh;padding:calc(var(--nav-h) + var(--sp-8)) var(--sp-6) var(--sp-8);}
+
+.proj-hero-mesh{position:absolute;inset:-50%;width:200%;height:200%;background:
+  radial-gradient(ellipse at 15% 50%,rgba(139,92,246,0.4) 0%,transparent 50%),
+  radial-gradient(ellipse at 85% 20%,rgba(37,99,235,0.35) 0%,transparent 50%),
+  radial-gradient(ellipse at 55% 85%,rgba(14,165,233,0.28) 0%,transparent 50%),
+  radial-gradient(ellipse at 35% 30%,rgba(168,85,247,0.22) 0%,transparent 50%);
+animation:mesh-morph 22s ease-in-out infinite;pointer-events:none;z-index:0;filter:blur(50px);}
+@keyframes mesh-morph{
+  0%{transform:translate(0,0) rotate(0deg) scale(1);}
+  25%{transform:translate(4%,-3%) rotate(2deg) scale(1.04);}
+  50%{transform:translate(-3%,4%) rotate(-2deg) scale(0.97);}
+  75%{transform:translate(3%,2%) rotate(3deg) scale(1.03);}
+  100%{transform:translate(0,0) rotate(0deg) scale(1);}
+}
+
+.proj-hero-orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.55;pointer-events:none;will-change:transform;}
+.proj-hero-orb--1{width:550px;height:550px;background:radial-gradient(circle,rgba(139,92,246,0.45),transparent 70%);top:-15%;left:-8%;animation:porb1 22s ease-in-out infinite;}
+.proj-hero-orb--2{width:400px;height:400px;background:radial-gradient(circle,rgba(37,99,235,0.4),transparent 70%);bottom:-8%;right:-5%;animation:porb2 28s ease-in-out infinite;}
+.proj-hero-orb--3{width:280px;height:280px;background:radial-gradient(circle,rgba(14,165,233,0.3),transparent 70%);top:50%;left:55%;animation:porb3 18s ease-in-out infinite;}
+@keyframes porb1{0%,100%{transform:translate(0,0);}50%{transform:translate(50px,30px);}}
+@keyframes porb2{0%,100%{transform:translate(0,0);}50%{transform:translate(-40px,-30px);}}
+@keyframes porb3{0%,100%{transform:translate(0,0);}50%{transform:translate(60px,-40px);}}
+
+.proj-hero__kicker{font-family:var(--font-mono);font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(139,92,246,0.9);background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.25);padding:6px 18px;border-radius:var(--r-full);margin-bottom:var(--sp-4);display:inline-flex;align-items:center;gap:8px;}
+.proj-hero__kicker-dot{width:6px;height:6px;background:#a78bfa;border-radius:50%;box-shadow:0 0 8px #a78bfa;animation:kdot 2s ease-in-out infinite;}
+@keyframes kdot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.7);}}
+
+.proj-hero__title{font-size:clamp(3rem,8vw,6rem);font-weight:800;letter-spacing:-0.05em;line-height:1.0;text-align:center;margin-bottom:var(--sp-3);}
+.proj-hero__title-line{display:block;color:#e2e8f0;}
+.proj-hero__title-line--glow{
+  background:linear-gradient(90deg,#a78bfa 0%,#60a5fa 35%,#38bdf8 55%,rgba(255,255,255,0.95) 58%,#38bdf8 61%,#60a5fa 80%,#a78bfa 100%);
+  background-size:220% 100%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  filter:drop-shadow(0 0 24px rgba(139,92,246,0.5));
+  animation:title-shimmer 5s ease-in-out infinite,title-glow 3s ease-in-out infinite alternate;
+}
+@keyframes title-shimmer{0%{background-position:120% 50%;}100%{background-position:-80% 50%;}}
+@keyframes title-glow{0%{filter:drop-shadow(0 0 20px rgba(139,92,246,0.4));}100%{filter:drop-shadow(0 0 40px rgba(96,165,250,0.6));}}
+
+.proj-hero__sub{font-size:clamp(1rem,2.2vw,1.3rem);color:rgba(255,255,255,0.55);max-width:640px;text-align:center;line-height:1.75;margin-bottom:var(--sp-5);}
+.proj-hero__sub strong{color:rgba(255,255,255,0.88);font-weight:600;}
+
+/* ===== VALUE PANEL (fixed left, desktop) - identical to index.html ===== */
+.value-panel{position:fixed;left:16px;top:calc(var(--nav-h,64px) + 12px);bottom:12px;z-index:50;width:252px;background:rgba(5,9,20,0.95);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(59,130,246,0.25);border-radius:18px;padding:0;box-shadow:0 4px 40px rgba(0,0,0,0.7),0 0 0 1px rgba(139,92,246,0.1),inset 0 1px 0 rgba(255,255,255,0.06);display:flex;flex-direction:column;}
+.value-panel::before{content:'';display:block;height:3px;background:linear-gradient(90deg,#2563eb,#0ea5e9,#8b5cf6);border-radius:18px 18px 0 0;flex-shrink:0;}
+.vp-scroll{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding:0 0 4px;scrollbar-width:thin;scrollbar-color:rgba(59,130,246,0.25) transparent;}
+.vp-scroll::-webkit-scrollbar{width:3px;}
+.vp-scroll::-webkit-scrollbar-thumb{background:rgba(59,130,246,0.3);border-radius:2px;}
+.vp-header{text-align:center;padding:12px 14px 10px;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;}
+.vp-eyebrow{font-size:0.6rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.38);font-family:var(--font-mono);margin-bottom:4px;}
+.vp-price{font-size:2rem;font-weight:800;color:#fff;letter-spacing:-0.04em;line-height:1.1;}
+.vp-price sup{font-size:1rem;font-weight:700;color:#38bdf8;vertical-align:super;line-height:0;}
+.vp-hook{font-size:0.68rem;color:rgba(255,255,255,0.48);margin-top:4px;font-style:italic;line-height:1.5;}
+.vp-label{font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#38bdf8;font-family:var(--font-mono);padding:6px 14px 2px;}
+.vp-item{display:flex;align-items:flex-start;gap:9px;padding:5px 14px;transition:background 0.15s;cursor:default;}
+.vp-item:hover{background:rgba(255,255,255,0.05);}
+.vp-ico{font-size:1rem;flex-shrink:0;margin-top:1px;line-height:1;}
+.vp-txt strong{display:block;font-size:0.84rem;font-weight:700;color:rgba(255,255,255,0.95);line-height:1.3;}
+.vp-txt span{font-size:0.7rem;color:rgba(255,255,255,0.42);line-height:1.45;}
+.vp-divider{height:1px;background:rgba(255,255,255,0.08);margin:4px 0;}
+.vp-footer{flex-shrink:0;padding:8px 14px 0;}
+.vp-cta{display:block;text-align:center;background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff !important;font-size:0.84rem;font-weight:700;padding:11px;border-radius:11px;text-decoration:none !important;letter-spacing:0.03em;transition:all 0.2s;box-shadow:0 4px 20px rgba(37,99,235,0.4);}
+.vp-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,99,235,0.55);}
+
+/* ===== MOBILE TOP TICKER ===== */
+.value-ticker-wrap{display:none;position:fixed;top:var(--nav-h,64px);left:0;right:0;z-index:48;background:rgba(5,9,20,0.96);border-bottom:1px solid rgba(59,130,246,0.18);overflow:hidden;height:34px;align-items:center;}
+.value-ticker{display:inline-flex;align-items:center;white-space:nowrap;animation:ticker-scroll 36s linear infinite;}
+@keyframes ticker-scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.value-ticker .vt-item{font-size:0.7rem;color:rgba(255,255,255,0.65);padding:0 8px;font-weight:500;}
+.value-ticker .vt-sep{color:rgba(59,130,246,0.5);padding:0 2px;font-weight:700;}
+
+/* ===== MOBILE BOTTOM BAR ===== */
+.value-bottom-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:48;background:rgba(5,9,20,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(59,130,246,0.18);padding:10px 16px;align-items:center;justify-content:space-between;gap:10px;}
+.vbb-info strong{display:block;font-size:0.88rem;font-weight:700;color:#fff;}
+.vbb-info span{font-size:0.7rem;color:rgba(255,255,255,0.45);}
+.vbb-btn{display:inline-flex;align-items:center;gap:5px;background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff !important;font-size:0.8rem;font-weight:700;padding:10px 18px;border-radius:10px;text-decoration:none !important;white-space:nowrap;flex-shrink:0;box-shadow:0 4px 16px rgba(37,99,235,0.4);}
+
+@media(max-width:1100px){
+  .value-panel{display:none;}
+  .value-ticker-wrap{display:flex;}
+  .value-bottom-bar{display:flex;}
+  body{padding-bottom:64px;}
+}
+
+/* ===== SCHEDULE PANEL (fixed right, desktop) ===== */
+.schedule-panel{position:fixed;right:16px;top:calc(var(--nav-h,64px) + 12px);bottom:12px;z-index:50;width:252px;background:rgba(5,9,20,0.95);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(16,185,129,0.22);border-radius:18px;padding:0;box-shadow:0 4px 40px rgba(0,0,0,0.7),0 0 0 1px rgba(16,185,129,0.08),inset 0 1px 0 rgba(255,255,255,0.06);display:flex;flex-direction:column;}
+.schedule-panel::before{content:'';display:block;height:3px;background:linear-gradient(90deg,#10b981,#34d399,#a78bfa);border-radius:18px 18px 0 0;flex-shrink:0;}
+.sp-scroll{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:0;padding:0 0 4px;scrollbar-width:thin;scrollbar-color:rgba(16,185,129,0.25) transparent;}
+.sp-scroll::-webkit-scrollbar{width:3px;}
+.sp-scroll::-webkit-scrollbar-thumb{background:rgba(16,185,129,0.3);border-radius:2px;}
+.sp-header{text-align:center;padding:12px 14px 10px;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;}
+.sp-eyebrow{font-size:0.6rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.38);font-family:var(--font-mono);margin-bottom:4px;}
+.sp-title{font-size:1.05rem;font-weight:800;color:#fff;line-height:1.25;letter-spacing:-0.02em;}
+.sp-title-accent{background:linear-gradient(90deg,#34d399,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.sp-timezone{display:inline-flex;align-items:center;gap:5px;font-size:0.6rem;color:rgba(255,255,255,0.35);margin-top:5px;font-family:var(--font-mono);background:rgba(255,255,255,0.04);padding:3px 10px;border-radius:var(--r-full);}
+.sp-session{padding:10px 14px;}
+.sp-session + .sp-session{border-top:1px solid rgba(255,255,255,0.06);}
+.sp-session-badge{display:inline-flex;align-items:center;gap:5px;font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 9px;border-radius:var(--r-full);margin-bottom:7px;}
+.sp-session--morning .sp-session-badge{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.25);}
+.sp-session--aiops .sp-session-badge{background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);}
+.sp-live-dot{width:5px;height:5px;background:#34d399;border-radius:50%;box-shadow:0 0 5px #34d399;display:inline-block;animation:sp-blink 1.8s ease-in-out infinite;}
+.sp-ai-dot{width:5px;height:5px;background:#a78bfa;border-radius:50%;box-shadow:0 0 5px #a78bfa;display:inline-block;animation:sp-blink 1.8s ease-in-out infinite;}
+@keyframes sp-blink{0%,100%{opacity:1;}50%{opacity:0.3;}}
+.sp-session-days{font-size:0.78rem;font-weight:700;color:rgba(255,255,255,0.88);margin-bottom:2px;}
+.sp-session-time{font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:5px;font-family:var(--font-mono);}
+.sp-session--morning .sp-session-time{color:#34d399;}
+.sp-session--aiops .sp-session-time{color:#a78bfa;}
+.sp-session-desc{font-size:0.7rem;color:rgba(255,255,255,0.45);line-height:1.55;}
+.sp-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px;}
+.sp-tag{font-size:0.58rem;font-weight:600;padding:2px 7px;border-radius:5px;background:rgba(139,92,246,0.1);color:rgba(167,139,250,0.8);border:1px solid rgba(139,92,246,0.2);}
+.sp-commit{padding:8px 14px;border-top:1px solid rgba(255,255,255,0.06);display:flex;flex-direction:column;gap:7px;}
+.sp-commit-row{display:flex;align-items:flex-start;gap:8px;}
+.sp-ico{font-size:0.9rem;flex-shrink:0;line-height:1.3;}
+.sp-txt strong{display:block;font-size:0.8rem;font-weight:700;color:rgba(255,255,255,0.88);line-height:1.2;}
+.sp-txt span{font-size:0.67rem;color:rgba(255,255,255,0.4);}
+.sp-footer{flex-shrink:0;padding:8px 14px 10px;border-top:1px solid rgba(255,255,255,0.06);}
+.sp-cta{display:block;text-align:center;background:linear-gradient(135deg,#059669,#10b981);color:#fff !important;font-size:0.84rem;font-weight:700;padding:11px;border-radius:11px;text-decoration:none !important;letter-spacing:0.03em;transition:all 0.2s;box-shadow:0 4px 20px rgba(16,185,129,0.28);}
+.sp-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(16,185,129,0.42);}
+@media(max-width:1100px){.schedule-panel{display:none;}}
+
+/* ===== STATS BAR ===== */
+.proj-stats{display:flex;justify-content:center;flex-wrap:wrap;gap:0;background:rgba(255,255,255,0.025);border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);}
+
+/* ===== PANEL-AWARE LAYOUT (desktop only) ===== */
+@media(min-width:1101px){
+  /* Push all main content into the zone between both fixed panels */
+  main{padding-left:275px;padding-right:275px;}
+  /* Re-expand full-bleed sections back to viewport width */
+  .proj-hero,.ai-track-section,.trust-section,.enroll-section{
+    margin-left:-275px;margin-right:-275px;
+  }
+  /* Hero content: restore clearance so title/CTA stay between panels */
+  .proj-hero__content{padding-left:310px !important;padding-right:310px !important;}
+  /* Trust section has no inner container - pad content directly */
+  .trust-section{padding-left:310px;padding-right:310px;}
+  /* Containers inside re-expanded sections: cap width to the safe zone */
+  .ai-track-section .container,.enroll-section > .container{
+    max-width:calc(100vw - 590px);
+  }
+}
+.proj-stat{display:flex;flex-direction:column;align-items:center;padding:var(--sp-4) var(--sp-5);flex:1;min-width:140px;border-right:1px solid rgba(255,255,255,0.07);}
+.proj-stat:last-child{border-right:none;}
+.proj-stat__num{font-size:2rem;font-weight:800;letter-spacing:-0.04em;line-height:1;}
+.proj-stat__label{font-size:0.72rem;color:var(--text-3);font-weight:500;margin-top:4px;text-align:center;}
+
+/* ===== CATEGORY SECTION ===== */
+.proj-track-header{margin-bottom:var(--sp-5);}
+.proj-track-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 18px;border-radius:var(--r-full);font-family:var(--font-mono);font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:var(--sp-2);}
+.proj-track-badge--devops{background:rgba(14,165,233,0.12);border:1px solid rgba(14,165,233,0.25);color:var(--accent-2);}
+.proj-track-badge--ai{background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.25);color:#c4b5fd;}
+
+/* ===== PROJECT CATEGORY GROUPS ===== */
+.proj-category{margin-bottom:var(--sp-6);}
+.proj-cat-label{display:flex;align-items:center;gap:12px;margin-bottom:var(--sp-3);}
+.proj-cat-name{font-size:1.05rem;font-weight:800;display:flex;align-items:center;gap:8px;}
+.proj-cat-count{font-family:var(--font-mono);font-size:0.68rem;font-weight:700;padding:3px 10px;border-radius:var(--r-full);}
+.proj-cat-line{flex:1;height:1px;background:linear-gradient(90deg,currentColor,transparent);opacity:0.2;}
+
+/* AWS - amber */
+.proj-cat--aws .proj-cat-name{color:#fbbf24;}
+.proj-cat--aws .proj-cat-count{background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25);}
+.proj-cat--aws .proj-card{border-left-color:#fbbf24;}
+.proj-cat--aws .proj-num{background:rgba(251,191,36,0.12);color:#fbbf24;}
+
+/* Azure - blue */
+.proj-cat--azure .proj-cat-name{color:#60a5fa;}
+.proj-cat--azure .proj-cat-count{background:rgba(96,165,250,0.12);color:#60a5fa;border:1px solid rgba(96,165,250,0.25);}
+.proj-cat--azure .proj-card{border-left-color:#60a5fa;}
+.proj-cat--azure .proj-num{background:rgba(96,165,250,0.12);color:#60a5fa;}
+
+/* CI/CD - cyan */
+.proj-cat--cicd .proj-cat-name{color:#22d3ee;}
+.proj-cat--cicd .proj-cat-count{background:rgba(34,211,238,0.12);color:#22d3ee;border:1px solid rgba(34,211,238,0.25);}
+.proj-cat--cicd .proj-card{border-left-color:#22d3ee;}
+.proj-cat--cicd .proj-num{background:rgba(34,211,238,0.12);color:#22d3ee;}
+
+/* Kubernetes - indigo */
+.proj-cat--k8s .proj-cat-name{color:#818cf8;}
+.proj-cat--k8s .proj-cat-count{background:rgba(129,140,248,0.12);color:#818cf8;border:1px solid rgba(129,140,248,0.25);}
+.proj-cat--k8s .proj-card{border-left-color:#818cf8;}
+.proj-cat--k8s .proj-num{background:rgba(129,140,248,0.12);color:#818cf8;}
+
+/* Ansible - rose */
+.proj-cat--ansible .proj-cat-name{color:#fb7185;}
+.proj-cat--ansible .proj-cat-count{background:rgba(251,113,133,0.12);color:#fb7185;border:1px solid rgba(251,113,133,0.25);}
+.proj-cat--ansible .proj-card{border-left-color:#fb7185;}
+.proj-cat--ansible .proj-num{background:rgba(251,113,133,0.12);color:#fb7185;}
+
+/* ===== INDIVIDUAL PROJECT CARDS ===== */
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--sp-2);}
+.proj-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-left-width:3px;border-radius:var(--r-md);padding:var(--sp-2) var(--sp-3);display:flex;align-items:flex-start;gap:10px;transition:all 0.2s;cursor:default;}
+.proj-card:hover{background:rgba(255,255,255,0.06);transform:translateX(4px);box-shadow:0 4px 20px rgba(0,0,0,0.2);}
+.proj-num{font-family:var(--font-mono);font-size:0.65rem;font-weight:700;min-width:28px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.proj-title{font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.85);line-height:1.5;}
+.proj-card:hover .proj-title{color:#fff;}
+
+/* ===== AI PROJECTS SECTION ===== */
+.ai-track-section{background:linear-gradient(180deg,#060d1a 0%,#09071a 40%,#0d0a1f 100%);position:relative;overflow:hidden;padding:var(--sp-10) 0;}
+.ai-section-orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none;opacity:0.3;}
+.ai-section-orb--1{width:500px;height:500px;background:#6d28d9;top:-10%;left:-5%;}
+.ai-section-orb--2{width:400px;height:400px;background:#2563eb;bottom:-10%;right:-5%;}
+.ai-section-orb--3{width:300px;height:300px;background:#4f46e5;top:40%;left:45%;}
+
+.ai-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:var(--sp-3);}
+.ai-card{background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.18);border-radius:var(--r-lg);padding:var(--sp-3) var(--sp-4);position:relative;overflow:hidden;transition:all 0.25s;cursor:default;}
+.ai-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(139,92,246,0.08),transparent 60%);pointer-events:none;}
+.ai-card:hover{background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.35);transform:translateY(-3px);box-shadow:0 8px 32px rgba(139,92,246,0.18);}
+.ai-card__top{display:flex;align-items:center;gap:8px;margin-bottom:var(--sp-2);}
+.ai-type{font-family:var(--font-mono);font-size:0.62rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:var(--r-full);}
+.ai-type--agentic{background:rgba(139,92,246,0.2);color:#c4b5fd;border:1px solid rgba(139,92,246,0.3);}
+.ai-type--multi{background:rgba(14,165,233,0.15);color:#7dd3fc;border:1px solid rgba(14,165,233,0.3);}
+.ai-card__num{font-family:var(--font-mono);font-size:0.65rem;color:rgba(255,255,255,0.25);margin-left:auto;}
+.ai-card__domain{font-size:0.72rem;color:rgba(255,255,255,0.38);margin-bottom:6px;font-weight:500;}
+.ai-card__title{font-size:0.92rem;font-weight:700;color:rgba(255,255,255,0.9);line-height:1.55;}
+.ai-card:hover .ai-card__title{color:#fff;}
+
+/* ===== TRUST THE PROCESS SECTION ===== */
+.trust-section{background:linear-gradient(135deg,#060d1a 0%,#0d1a35 50%,#060d1a 100%);position:relative;overflow:hidden;padding:var(--sp-10) var(--sp-6);text-align:center;}
+.trust-orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:0.2;pointer-events:none;}
+.trust-orb-1{width:450px;height:450px;background:#2563eb;top:-20%;left:-10%;}
+.trust-orb-2{width:350px;height:350px;background:#8b5cf6;bottom:-20%;right:-10%;}
+
+.trust-counter-wrap{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:var(--sp-5);}
+.trust-counter{font-size:clamp(7rem,20vw,14rem);font-weight:800;letter-spacing:-0.06em;line-height:0.85;
+  background:linear-gradient(135deg,#60a5fa 0%,#a78bfa 40%,#38bdf8 70%,#60a5fa 100%);
+  background-size:200% 200%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:counter-shimmer 6s ease-in-out infinite;}
+@keyframes counter-shimmer{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+.trust-counter-plus{font-size:clamp(3rem,8vw,6rem);font-weight:800;background:inherit;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.trust-counter-label{font-family:var(--font-mono);font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:var(--sp-1);}
+
+.trust-heading{font-size:clamp(1.8rem,4.5vw,3.2rem);font-weight:800;color:#fff;line-height:1.2;max-width:720px;margin:0 auto var(--sp-3);}
+.trust-heading .accent{background:linear-gradient(90deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.trust-body{font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,0.55);max-width:560px;margin:0 auto var(--sp-5);line-height:1.75;}
+.trust-body strong{color:rgba(255,255,255,0.85);}
+
+.trust-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:var(--sp-6);}
+.trust-pill{font-size:0.82rem;font-weight:600;padding:8px 20px;border-radius:var(--r-full);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);transition:all 0.2s;}
+.trust-pill:hover{background:rgba(255,255,255,0.09);color:#fff;}
+.trust-pill--star{background:rgba(251,191,36,0.08);border-color:rgba(251,191,36,0.2);color:#fbbf24;}
+.trust-pill--star:hover{background:rgba(251,191,36,0.14);color:#fde68a;}
+
+/* ===== ENROLL SECTION ===== */
+.enroll-section{background:linear-gradient(135deg,#0a1628 0%,#0d2147 50%,#0f2d6e 100%);color:#fff;position:relative;overflow:hidden;padding:var(--sp-10) var(--sp-6);}
+.enroll-section h2{color:#fff;}
+.enroll-section h2 span{background:linear-gradient(135deg,var(--accent-2),#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.enroll-section p{color:rgba(255,255,255,0.6);}
+.cta-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;opacity:0.25;}
+.cta-orb-1{width:350px;height:350px;background:#2563eb;top:-15%;left:-8%;}
+.cta-orb-2{width:280px;height:280px;background:#06b6d4;bottom:-15%;right:-8%;}
+.cta-checklist{display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:center;margin:var(--sp-4) 0;}
+.cta-check-item{display:flex;align-items:center;gap:8px;font-size:0.88rem;color:rgba(255,255,255,0.8);font-weight:500;}
+.cta-check-item .chk{color:#34d399;font-weight:700;}
+.cta-note-sm{font-size:0.77rem;color:rgba(255,255,255,0.38);margin-top:var(--sp-2);}
+
+/* ===== BTN EXTRAS ===== */
+.btn--glow{box-shadow:0 0 20px rgba(37,99,235,0.4),0 4px 20px rgba(37,99,235,0.3);}
+.btn--glow:hover{box-shadow:0 0 30px rgba(37,99,235,0.5),0 8px 30px rgba(37,99,235,0.4);}
+.btn--whatsapp{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;box-shadow:0 4px 16px rgba(37,211,102,0.3);border:none;}
+.btn--whatsapp:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,0.45);}
+
+@media(max-width:640px){
+  .proj-hero__title{font-size:clamp(2.4rem,10vw,4rem);}
+  .ai-grid{grid-template-columns:1fr;}
+  .proj-grid{grid-template-columns:1fr;}
+  .proj-stat{min-width:100px;padding:var(--sp-3) var(--sp-2);}
+  .proj-stat__num{font-size:1.5rem;}
+}
+
+@media print{
+  .nav,.scroll-progress,.nav__mobile,.orb,.btt,.noise,.value-panel,.schedule-panel,.value-ticker-wrap,.value-bottom-bar{display:none !important;}
+  .reveal{opacity:1;transform:none;}
+  body{background:#fff;color:#000;}
+}
+</style>
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+<!-- VALUE PANEL (fixed left, desktop) -->
+<aside class="value-panel" aria-label="Brand Yourself, Earn More program">
+  <div class="vp-header">
+    <div class="vp-eyebrow">Want to know more?</div>
+    <a class="vp-cta" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer" style="margin-top:8px;">&#128172;&nbsp; Message us on WhatsApp</a>
+    <div class="vp-hook" style="margin-top:8px;">Get a quick walkthrough on WhatsApp.</div>
+  </div>
+  <div class="vp-scroll">
+    <div class="vp-label">Ways you earn</div>
+    <div class="vp-item">
+      <span class="vp-ico">&#127908;</span>
+      <div class="vp-txt"><strong>Career Coaching</strong><span>Sessions, mentoring &amp; workshops</span></div>
+    </div>
+    <div class="vp-item">
+      <span class="vp-ico">&#127919;</span>
+      <div class="vp-txt"><strong>Resume &amp; LinkedIn</strong><span>Reviews, rewrites &amp; optimization</span></div>
+    </div>
+    <div class="vp-item">
+      <span class="vp-ico">&#128202;</span>
+      <div class="vp-txt"><strong>HR &amp; Soft-Skills</strong><span>Consulting &amp; corporate training</span></div>
+    </div>
+    <div class="vp-item">
+      <span class="vp-ico">&#128240;</span>
+      <div class="vp-txt"><strong>Content &amp; Sponsors</strong><span>Podcasts, newsletters, affiliates</span></div>
+    </div>
+    <div class="vp-divider"></div>
+    <div class="vp-label">The model</div>
+    <div class="vp-item">
+      <span class="vp-ico">&#127775;</span>
+      <div class="vp-txt"><strong>Free &rarr; Paid Authority</strong></div>
+    </div>
+    <div class="vp-item">
+      <span class="vp-ico">&#128200;</span>
+      <div class="vp-txt"><strong>7-Level Growth Ladder</strong></div>
+    </div>
+    <div class="vp-item">
+      <span class="vp-ico">&#128176;</span>
+      <div class="vp-txt"><strong>30&ndash;50% Revenue Share</strong></div>
+    </div>
+  </div>
+  <div class="vp-footer">
+    <a class="vp-cta" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer">Start Earning &rarr;</a>
+  </div>
+</aside>
+
+<!-- SCHEDULE PANEL (fixed right, desktop) -->
+<aside class="schedule-panel" aria-label="The earning model">
+  <div class="sp-header">
+    <div class="sp-eyebrow">The Earning Model</div>
+    <div class="sp-title">Free First,<br><span class="sp-title-accent">Paid Next</span></div>
+    <div class="sp-timezone">&#128176; Same model across CBC</div>
+  </div>
+  <div class="sp-scroll">
+    <div class="sp-session sp-session--morning">
+      <div class="sp-session-badge"><span class="sp-live-dot"></span>&nbsp;Stage 1 &middot; Go Free</div>
+      <div class="sp-session-days">Build Authority</div>
+      <div class="sp-session-time">Show Up</div>
+      <div class="sp-session-desc">Run free sessions, posts, podcasts and lives. Give real value and build huge authority and trust.</div>
+    </div>
+    <div class="sp-session sp-session--aiops">
+      <div class="sp-session-badge"><span class="sp-ai-dot"></span>&nbsp;Stage 2 &middot; Go Paid</div>
+      <div class="sp-session-days">Charge For It</div>
+      <div class="sp-session-time">Per Task</div>
+      <div class="sp-session-desc">Once you're known, charge - paid sessions and consulting, billed per training, per student, per hour or per task.</div>
+      <div class="sp-tags">
+        <span class="sp-tag">Coaching</span>
+        <span class="sp-tag">Consulting</span>
+        <span class="sp-tag">Mentoring</span>
+      </div>
+    </div>
+    <div class="sp-commit">
+      <div class="sp-commit-row">
+        <span class="sp-ico">&#128188;</span>
+        <div class="sp-txt"><strong>Client Work via CBC</strong><span>The platform brings you projects</span></div>
+      </div>
+      <div class="sp-commit-row">
+        <span class="sp-ico">&#128176;</span>
+        <div class="sp-txt"><strong>30&ndash;50% Revenue Share</strong><span>Consistent for tech &amp; non-tech</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="sp-footer">
+    <a class="sp-cta" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer">Start Your Journey &rarr;</a>
+  </div>
+</aside>
+
+<!-- MOBILE TICKER -->
+<div class="value-ticker-wrap" aria-hidden="true">
+  <div class="value-ticker">
+    <span class="vt-item">&#127908; Career Coaching</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#127919; Resume &amp; LinkedIn</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#128202; HR &amp; Soft-Skills</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#128240; Podcasts &amp; Sponsors</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#127775; Free &rarr; Paid Authority</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#128200; 7-Level Growth Ladder</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#128176; 30&ndash;50% Revenue Share</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#127908; Career Coaching</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#127919; Resume &amp; LinkedIn</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#128202; HR &amp; Soft-Skills</span><span class="vt-sep">&middot;</span>
+    <span class="vt-item">&#128240; Podcasts &amp; Sponsors</span><span class="vt-sep">&middot;</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a class="nav__logo" href="index.html" aria-label="CareerByteCode home">
+    <picture>
+      <source srcset="cbc-logo-72.webp" type="image/webp">
+      <img src="cbc-logo-72.png" alt="CBC" class="nav__logo-icon" width="36" height="36">
+    </picture>
+    <span class="nav__logo-text">Career<em>ByteCode</em></span>
+  </a>
+  <div class="nav__links">
+    <a href="index.html">Home</a>
+    <a href="syllabus.html">Syllabus</a>
+    <a href="earn.html" class="active">Grow &amp; Earn</a>
+    <a href="index.html#mentor">Mentor</a>
+    <a href="index.html#included">What's Included</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
+    <a class="nav__cta" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer">Join Now</a>
+  </div>
+  <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav__mobile" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="syllabus.html">Syllabus</a>
+  <a href="earn.html" class="active">Grow &amp; Earn</a>
+  <a href="index.html#mentor">Mentor</a>
+  <a href="index.html#included">What's Included</a>
+  <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle dark mode" style="margin-top:12px;"></button>
+  <a class="nav__cta" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer" style="display:inline-flex;margin-top:12px;">Join Now</a>
+</div>
+
+<main>
+
+<!-- ==================== HERO ==================== -->
+<section class="proj-hero" id="hero">
+  <div class="proj-hero-mesh"></div>
+  <div class="proj-hero-orb proj-hero-orb--1"></div>
+  <div class="proj-hero-orb proj-hero-orb--2"></div>
+  <div class="proj-hero-orb proj-hero-orb--3"></div>
+  <div class="proj-hero__content">
+    <div class="proj-hero__kicker reveal">
+      <span class="proj-hero__kicker-dot"></span>
+      After the Course &middot; Grow &amp; Earn &middot; Non-Tech Creator Track
+    </div>
+    <h1 class="proj-hero__title reveal">
+      <span class="proj-hero__title-line">You solve people problems.</span>
+      <span class="proj-hero__title-line proj-hero__title-line--glow">Now get paid for it.</span>
+    </h1>
+    <p class="proj-hero__sub reveal">
+      Many think a non-tech person can't build a brand. <strong>The opposite is true.</strong><br>
+      Your stories, empathy and guidance are in huge demand - and they often build a <strong>bigger audience than tech ever could</strong>. These plays turn them into a following and an income.
+    </p>
+    <div class="hero__actions reveal" style="justify-content:center;">
+      <a class="btn btn--primary btn--lg btn--magnetic btn--glow" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer">Start Your Creator Journey &rarr;</a>
+      <a class="btn btn--outline btn--lg btn--magnetic" href="syllabus.html">View Syllabus</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STATS ==================== -->
+<div class="proj-stats" role="region" aria-label="Grow and earn statistics">
+  <div class="proj-stat">
+    <div class="proj-stat__num" style="color:#60a5fa;"><span data-count-to="60">-</span></div>
+    <div class="proj-stat__label">Visibility Plays</div>
+  </div>
+  <div class="proj-stat">
+    <div class="proj-stat__num" style="color:#a78bfa;"><span data-count-to="7">-</span></div>
+    <div class="proj-stat__label">Growth Levels</div>
+  </div>
+  <div class="proj-stat">
+    <div class="proj-stat__num" style="color:#22d3ee;"><span data-count-to="15">-</span></div>
+    <div class="proj-stat__label">Income Streams</div>
+  </div>
+  <div class="proj-stat">
+    <div class="proj-stat__num" style="color:#34d399;"><span data-count-to="50">-</span><span style="font-size:1.2rem;">%</span></div>
+    <div class="proj-stat__label">Revenue Share</div>
+  </div>
+</div>
+
+<!-- ==================== THE CREATOR ECONOMY ==================== -->
+<section class="section reveal" id="creator-economy">
+<div class="container">
+  <div class="section-header">
+    <div class="section-tag">the creator economy</div>
+    <h2>Build an ecosystem, <span class="text-gradient">not just a certificate</span></h2>
+    <p>Most courses stop at "how to build your profile." CareerByteCode goes further - it teaches you how to become an industry voice and earn continuously.</p>
+  </div>
+  <div class="journey-grid">
+    <div class="journey-connector"></div>
+    <div class="journey-step reveal">
+      <div class="journey-step__num">1</div>
+      <div class="journey-step__label">Student</div>
+      <div class="journey-step__title">Become a Creator</div>
+      <div class="journey-step__desc">Every student should become a creator - publishing content and building visibility.</div>
+    </div>
+    <div class="journey-step reveal">
+      <div class="journey-step__num">2</div>
+      <div class="journey-step__label">Creator</div>
+      <div class="journey-step__title">Become an Educator</div>
+      <div class="journey-step__desc">Every creator should become an educator - teaching what they know to an audience.</div>
+    </div>
+    <div class="journey-step reveal">
+      <div class="journey-step__num">3</div>
+      <div class="journey-step__label">Educator</div>
+      <div class="journey-step__title">Become a Freelancer</div>
+      <div class="journey-step__desc">Every educator should become a freelancer - delivering real, paid client work.</div>
+    </div>
+    <div class="journey-step reveal">
+      <div class="journey-step__num">4</div>
+      <div class="journey-step__label">Freelancer</div>
+      <div class="journey-step__title">Become a Business Owner</div>
+      <div class="journey-step__desc">Every freelancer should become a business owner - with multiple income streams.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ==================== FREE -> PAID AUTHORITY PATH ==================== -->
+<section class="section reveal" id="authority-path">
+<div class="container">
+  <div class="section-header">
+    <div class="section-tag">the earning engine</div>
+    <h2>The Free &rarr; Paid <span class="text-gradient">Authority Path</span></h2>
+    <p>You don't start by charging. You start by showing up for free - consistently - until you become the name people trust. Then the money follows.</p>
+  </div>
+  <div class="features-grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="card card--blue reveal">
+      <div class="journey-step__label">Stage 1</div>
+      <h4>Go Free</h4>
+      <p>Run free sessions, posts, podcasts and lives. Give real value and build huge authority and trust.</p>
+    </div>
+    <div class="card card--purple reveal">
+      <div class="journey-step__label">Stage 2</div>
+      <h4>Go Paid</h4>
+      <p>Once you're known, start charging - paid sessions and consulting, billed per training, per student, per hour or per task.</p>
+    </div>
+    <div class="card card--green reveal">
+      <div class="journey-step__label">Stage 3</div>
+      <h4>Revenue Share</h4>
+      <p>Deliver through CareerByteCode and keep a 30&ndash;50% revenue share, with the platform bringing you clients and projects.</p>
+    </div>
+  </div>
+  <p style="text-align:center;color:var(--text-3);font-size:0.8rem;margin-top:var(--sp-4);font-family:var(--font-mono);">// Free builds the audience. Paid converts it. Revenue share throughout.</p>
+</div>
+</section>
+
+<!-- ==================== ROLE-TRANSITION ROADMAP ==================== -->
+<section class="section reveal" id="role-transition">
+<div class="container">
+  <div class="section-header">
+    <div class="section-tag">your roadmap</div>
+    <h2>The Role-Transition <span class="text-gradient">Roadmap</span></h2>
+    <p>Most professionals stay stuck because they never map the jump clearly. This four-step roadmap turns "I want to switch" into a plan you can act on - and teach.</p>
+  </div>
+  <div class="features-grid">
+    <div class="card card--blue reveal">
+      <div class="journey-step__label">Step 1</div>
+      <h4>Current Role</h4>
+      <p>Be honest about where you are today and the skills you already have.</p>
+    </div>
+    <div class="card card--purple reveal">
+      <div class="journey-step__label">Step 2</div>
+      <h4>Target Role</h4>
+      <p>Pick the exact role you want next - not vague, but specific.</p>
+    </div>
+    <div class="card card--green reveal">
+      <div class="journey-step__label">Step 3</div>
+      <h4>What to Learn</h4>
+      <p>List the skills, tools and certifications that close the gap.</p>
+    </div>
+    <div class="card card--gold reveal">
+      <div class="journey-step__label">Step 4</div>
+      <h4>How to Prepare</h4>
+      <p>Build a portfolio, mock interviews and content around it.</p>
+    </div>
+  </div>
+  <div class="tech-card" style="margin-top:var(--sp-4);">
+    <div class="tc-row">
+      <div class="tc-cat">&#128260; Example Transitions</div>
+      <div class="tc-tags">
+        <span class="ttag">Teacher &rarr; HR</span><span class="ttag ttag--cyan">HR &rarr; Scrum Master</span><span class="ttag ttag--green">Tester &rarr; Business Analyst</span><span class="ttag ttag--purple">Mechanical &rarr; Data Analyst</span><span class="ttag ttag--rose">Sales &rarr; Digital Marketer</span><span class="ttag ttag--gold">Accountant &rarr; Finance Analyst</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ==================== 60 VISIBILITY PLAYS ==================== -->
+<section class="section" id="visibility-plays">
+<div class="container">
+  <div class="proj-track-header reveal">
+    <div class="proj-track-badge proj-track-badge--devops">&#127919; Track 2 - 60 Visibility Plays</div>
+    <h2>60 ways to <span class="text-gradient">grow your name &amp; income</span></h2>
+    <p style="max-width:640px;">Each play shows what to do and exactly how it earns. Start with the ones that fit your story, stay consistent, and watch your name grow.</p>
+  </div>
+
+  <div class="proj-category proj-cat--azure reveal">
+    <div class="proj-cat-label">
+      <span class="proj-cat-name">&#128227; The Plays</span>
+      <span class="proj-cat-count">60 Plays</span>
+      <span class="proj-cat-line"></span>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card"><span class="proj-num">01</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Fear Coach</strong>Help people face fear, anxiety, gaps and layoffs.<br><span style="color:var(--success);">Earns: Paid coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">02</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Motivation Coach</strong>Post daily motivation and mindset content.<br><span style="color:var(--success);">Earns: Sponsorships, coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">03</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Resume Consultant</strong>Review and rewrite resumes.<br><span style="color:var(--success);">Earns: Resume writing services.</span></span></div>
+      <div class="proj-card"><span class="proj-num">04</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">LinkedIn Coach</strong>Teach personal branding on LinkedIn.<br><span style="color:var(--success);">Earns: LinkedIn optimization services.</span></span></div>
+      <div class="proj-card"><span class="proj-num">05</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Transition Coach</strong>Guide role switches step by step.<br><span style="color:var(--success);">Earns: Transition coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">06</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Interview Confidence Coach</strong>Build body language, communication and confidence.<br><span style="color:var(--success);">Earns: Interview coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">07</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">HR Interview Sessions</strong>Prepare people for behavioural rounds.<br><span style="color:var(--success);">Earns: Mock interview services.</span></span></div>
+      <div class="proj-card"><span class="proj-num">08</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Podcast Host</strong>Interview students, pros, recruiters and founders.<br><span style="color:var(--success);">Earns: Podcast sponsorship.</span></span></div>
+      <div class="proj-card"><span class="proj-num">09</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Story Podcast</strong>Share relatable career journeys.<br><span style="color:var(--success);">Earns: Audience growth, sponsors.</span></span></div>
+      <div class="proj-card"><span class="proj-num">10</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Women Career Restart Series</strong>Support women returning to work.<br><span style="color:var(--success);">Earns: Coaching, community.</span></span></div>
+      <div class="proj-card"><span class="proj-num">11</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Gap Success Stories</strong>Share one gap-to-job story every week.<br><span style="color:var(--success);">Earns: Trust &rarr; coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">12</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Student Success Interviews</strong>Feature student wins.<br><span style="color:var(--success);">Earns: Enrolments, mentoring.</span></span></div>
+      <div class="proj-card"><span class="proj-num">13</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Recruiter Interview Series</strong>Invite recruiters to share insider tips.<br><span style="color:var(--success);">Earns: Sponsorship, authority.</span></span></div>
+      <div class="proj-card"><span class="proj-num">14</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Founder Interview Series</strong>Interview startup founders.<br><span style="color:var(--success);">Earns: Partnerships, sponsors.</span></span></div>
+      <div class="proj-card"><span class="proj-num">15</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Freelancer Success Stories</strong>Showcase freelancers who made it.<br><span style="color:var(--success);">Earns: Community growth.</span></span></div>
+      <div class="proj-card"><span class="proj-num">16</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Communication Skills</strong>Teach public speaking and clarity.<br><span style="color:var(--success);">Earns: Communication coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">17</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Personal Branding Sessions</strong>Help people brand on LinkedIn &amp; Instagram.<br><span style="color:var(--success);">Earns: Branding services.</span></span></div>
+      <div class="proj-card"><span class="proj-num">18</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Networking Sessions</strong>Teach how to connect and follow up.<br><span style="color:var(--success);">Earns: Coaching, community.</span></span></div>
+      <div class="proj-card"><span class="proj-num">19</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Daily Career News</strong>Share hiring, layoffs and opportunities.<br><span style="color:var(--success);">Earns: Audience growth, sponsors.</span></span></div>
+      <div class="proj-card"><span class="proj-num">20</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Job Alert Sessions</strong>Post curated daily job alerts.<br><span style="color:var(--success);">Earns: Affiliate, sponsorship.</span></span></div>
+      <div class="proj-card"><span class="proj-num">21</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Freelancing Guidance</strong>Show beginners how to start freelancing.<br><span style="color:var(--success);">Earns: Mentoring, revenue sharing.</span></span></div>
+      <div class="proj-card"><span class="proj-num">22</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Business Owner Interviews</strong>Interview small business owners.<br><span style="color:var(--success);">Earns: Partnerships.</span></span></div>
+      <div class="proj-card"><span class="proj-num">23</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Women Entrepreneurs Series</strong>Spotlight women founders.<br><span style="color:var(--success);">Earns: Sponsors, community.</span></span></div>
+      <div class="proj-card"><span class="proj-num">24</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Soft Skills Sessions</strong>Teach communication, presentation and negotiation.<br><span style="color:var(--success);">Earns: Corporate soft-skills training.</span></span></div>
+      <div class="proj-card"><span class="proj-num">25</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Time Management &amp; Productivity</strong>Share systems and productivity tips.<br><span style="color:var(--success);">Earns: Workshops, coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">26</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">AI for Everyone</strong>Teach simple AI tools to non-tech folks.<br><span style="color:var(--success);">Earns: Workshops, affiliate.</span></span></div>
+      <div class="proj-card"><span class="proj-num">27</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Parenting &amp; Career</strong>Help parents balance work and family.<br><span style="color:var(--success);">Earns: Large audience, sponsors.</span></span></div>
+      <div class="proj-card"><span class="proj-num">28</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Mental Wellness for Professionals</strong>Share wellbeing and stress tips.<br><span style="color:var(--success);">Earns: Coaching, sponsorships.</span></span></div>
+      <div class="proj-card"><span class="proj-num">29</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Community Management</strong>Build and run CareerByteCode communities.<br><span style="color:var(--success);">Earns: Community revenue sharing.</span></span></div>
+      <div class="proj-card"><span class="proj-num">30</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Webinar Hosting &amp; Live Moderation</strong>Host webinars and moderate expert sessions.<br><span style="color:var(--success);">Earns: Event hosting fees.</span></span></div>
+      <div class="proj-card"><span class="proj-num">31</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Job Search Strategy Sessions</strong>Teach a smart, targeted job-search plan.<br><span style="color:var(--success);">Earns: Paid coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">32</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">LinkedIn Job-Hunting Masterclass</strong>Show how to find and apply for jobs via LinkedIn.<br><span style="color:var(--success);">Earns: Workshops, coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">33</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Switch Q&amp;A</strong>Answer live questions on changing fields.<br><span style="color:var(--success);">Earns: Transition coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">34</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Fresher to First-Job Guidance</strong>Guide students to their very first role.<br><span style="color:var(--success);">Earns: Student mentoring.</span></span></div>
+      <div class="proj-card"><span class="proj-num">35</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Work-From-Home &amp; Remote Job Guidance</strong>Show where remote jobs are and how to land them.<br><span style="color:var(--success);">Earns: Coaching, affiliate.</span></span></div>
+      <div class="proj-card"><span class="proj-num">36</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Salary &amp; Offer Negotiation</strong>Teach how to negotiate pay confidently.<br><span style="color:var(--success);">Earns: Paid coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">37</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Confidence &amp; Personal Growth Sessions</strong>Build self-belief and a growth mindset.<br><span style="color:var(--success);">Earns: Coaching, sponsors.</span></span></div>
+      <div class="proj-card"><span class="proj-num">38</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Productivity &amp; Career Habits</strong>Share habits that grow careers.<br><span style="color:var(--success);">Earns: Workshops.</span></span></div>
+      <div class="proj-card"><span class="proj-num">39</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Comeback After a Break</strong>Help people restart after a gap.<br><span style="color:var(--success);">Earns: Coaching, community.</span></span></div>
+      <div class="proj-card"><span class="proj-num">40</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Government-to-Private Switch Guidance</strong>Guide cross-sector career moves.<br><span style="color:var(--success);">Earns: Consulting.</span></span></div>
+      <div class="proj-card"><span class="proj-num">41</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Freelancing vs Job - Choosing Your Path</strong>Help people decide their best route.<br><span style="color:var(--success);">Earns: Coaching, enrolments.</span></span></div>
+      <div class="proj-card"><span class="proj-num">42</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Building Multiple Income Streams</strong>Show how to stack income sources.<br><span style="color:var(--success);">Earns: Workshops, affiliate.</span></span></div>
+      <div class="proj-card"><span class="proj-num">43</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Cracking Walk-In &amp; Campus Interviews</strong>Prepare for walk-ins and campus drives.<br><span style="color:var(--success);">Earns: Coaching, student mentoring.</span></span></div>
+      <div class="proj-card"><span class="proj-num">44</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Email &amp; Workplace Communication</strong>Teach professional workplace communication.<br><span style="color:var(--success);">Earns: Corporate training.</span></span></div>
+      <div class="proj-card"><span class="proj-num">45</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Handling Job Rejection &amp; Bouncing Back</strong>Help people recover and try again.<br><span style="color:var(--success);">Earns: Coaching, sponsors.</span></span></div>
+      <div class="proj-card"><span class="proj-num">46</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Building a Daily Career Routine</strong>Design a simple daily growth routine.<br><span style="color:var(--success);">Earns: Workshops.</span></span></div>
+      <div class="proj-card"><span class="proj-num">47</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Networking for Introverts</strong>Teach low-pressure networking.<br><span style="color:var(--success);">Earns: Coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">48</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Planning for Students</strong>Help students plan early.<br><span style="color:var(--success);">Earns: Student mentoring.</span></span></div>
+      <div class="proj-card"><span class="proj-num">49</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Mid-Career Growth &amp; Promotions</strong>Guide people to the next level.<br><span style="color:var(--success);">Earns: Coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">50</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Side-Hustle to Full-Time Income</strong>Show how to scale a side hustle safely.<br><span style="color:var(--success);">Earns: Coaching, community.</span></span></div>
+      <div class="proj-card"><span class="proj-num">51</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Interview Follow-Up &amp; Thank-You Notes</strong>Teach post-interview etiquette.<br><span style="color:var(--success);">Earns: Coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">52</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Building a Career Portfolio</strong>Help build a strong non-tech portfolio.<br><span style="color:var(--success);">Earns: Portfolio services.</span></span></div>
+      <div class="proj-card"><span class="proj-num">53</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Personal SWOT &amp; Career Clarity</strong>Run a strengths-and-gaps exercise.<br><span style="color:var(--success);">Earns: Coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">54</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Overcoming Age Bias in Job Search</strong>Help experienced candidates compete.<br><span style="color:var(--success);">Earns: Coaching, community.</span></span></div>
+      <div class="proj-card"><span class="proj-num">55</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Reskilling &amp; Upskilling Roadmaps</strong>Map out what to learn next.<br><span style="color:var(--success);">Earns: Course promotion, mentoring.</span></span></div>
+      <div class="proj-card"><span class="proj-num">56</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Managing Career Stress &amp; Burnout</strong>Share practical stress-management tools.<br><span style="color:var(--success);">Earns: Coaching, sponsors.</span></span></div>
+      <div class="proj-card"><span class="proj-num">57</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Finding a Mentor &amp; Being Mentored</strong>Teach how to find and keep mentors.<br><span style="color:var(--success);">Earns: Community, coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">58</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Career Goal-Setting &amp; Reviews</strong>Run goal-setting and review sessions.<br><span style="color:var(--success);">Earns: Coaching, workshops.</span></span></div>
+      <div class="proj-card"><span class="proj-num">59</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Negotiating Flexible / Hybrid Work</strong>Teach how to ask for flexibility.<br><span style="color:var(--success);">Earns: Coaching.</span></span></div>
+      <div class="proj-card"><span class="proj-num">60</span><span class="proj-title"><strong style="color:#fff;display:block;margin-bottom:3px;">Turning Your Skills Into a Personal Brand</strong>Help convert skills into a known brand.<br><span style="color:var(--success);">Earns: Branding services, revenue sharing.</span></span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ==================== EARN WITH DIGITAL MARKETING ==================== -->
+<section class="section reveal" id="digital-marketing">
+<div class="container">
+  <div class="section-header">
+    <div class="section-tag">earn with digital marketing</div>
+    <h2>Real services any <span class="text-gradient">non-tech pro can deliver</span></h2>
+    <p>You don't need to be technical to earn online. These are real, in-demand services clients pay for every month - and you learn every one of them in full in the freelancing course.</p>
+  </div>
+  <div class="features-grid">
+    <div class="card card--blue reveal">
+      <h4>SEO</h4>
+      <p><strong>What it is:</strong> Helping websites rank higher on Google.<br><strong>Who needs it:</strong> Local shops, clinics, coaches, small businesses.<br><span style="color:var(--success);"><strong>How you earn:</strong> Monthly retainers per client.</span></p>
+    </div>
+    <div class="card card--purple reveal">
+      <h4>Meta Ads (Facebook &amp; Instagram)</h4>
+      <p><strong>What it is:</strong> Running paid ad campaigns that bring customers.<br><strong>Who needs it:</strong> Shops, restaurants, course sellers, brands.<br><span style="color:var(--success);"><strong>How you earn:</strong> Setup fee + monthly management.</span></p>
+    </div>
+    <div class="card card--green reveal">
+      <h4>Google My Business (GMB)</h4>
+      <p><strong>What it is:</strong> Getting local businesses onto Google Maps.<br><strong>Who needs it:</strong> Any business with a physical location.<br><span style="color:var(--success);"><strong>How you earn:</strong> Setup + ongoing management fees.</span></p>
+    </div>
+    <div class="card card--gold reveal">
+      <h4>Social Media Management</h4>
+      <p><strong>What it is:</strong> Running a brand's daily social presence.<br><strong>Who needs it:</strong> Founders, coaches, clinics, small brands.<br><span style="color:var(--success);"><strong>How you earn:</strong> Monthly per-account retainers.</span></p>
+    </div>
+    <div class="card card--rose reveal">
+      <h4>Content Creation</h4>
+      <p><strong>What it is:</strong> Designing posts, reels and carousels.<br><strong>Who needs it:</strong> Personal brands and businesses.<br><span style="color:var(--success);"><strong>How you earn:</strong> Per-post or monthly packages.</span></p>
+    </div>
+    <div class="card card--blue reveal">
+      <h4>Resume Writing</h4>
+      <p><strong>What it is:</strong> Writing strong, ATS-friendly resumes.<br><strong>Who needs it:</strong> Students, job seekers, career switchers.<br><span style="color:var(--success);"><strong>How you earn:</strong> Per resume or per package.</span></p>
+    </div>
+    <div class="card card--purple reveal">
+      <h4>LinkedIn Optimization</h4>
+      <p><strong>What it is:</strong> Optimizing profiles to attract recruiters.<br><strong>Who needs it:</strong> Working professionals and job seekers.<br><span style="color:var(--success);"><strong>How you earn:</strong> Per profile or bundled with resume.</span></p>
+    </div>
+    <div class="card card--green reveal">
+      <h4>Canva Design</h4>
+      <p><strong>What it is:</strong> Creating posters, decks and brand kits.<br><strong>Who needs it:</strong> Small businesses, events, creators.<br><span style="color:var(--success);"><strong>How you earn:</strong> Per design or design packages.</span></p>
+    </div>
+  </div>
+  <p style="text-align:center;color:var(--text-3);font-size:0.8rem;margin-top:var(--sp-4);">You learn every one of these in full in the freelancing course - and earn from them on the same 30&ndash;50% revenue share with CareerByteCode.</p>
+</div>
+</section>
+
+<!-- ==================== INCOME OPPORTUNITIES ==================== -->
+<section class="section reveal" id="income">
+<div class="container">
+  <div class="section-header">
+    <div class="section-tag">income opportunities</div>
+    <h2>15 income streams for <span class="text-gradient">non-tech professionals</span></h2>
+    <p>Every play above feeds one or more of these income streams. The more you show up, the more of these open to you.</p>
+  </div>
+  <div class="tech-card">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px 24px;">
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Career Coaching</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Podcast Sponsorship</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Resume Writing</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> LinkedIn Optimization</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Interview Coaching</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Community Management</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Webinar Hosting</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Event Moderation</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> HR Consulting</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Career Counselling</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Corporate Soft-Skills Training</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Communication Coaching</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Student Mentoring</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> Freelancing</div>
+      <div class="pricing-item" style="color:var(--text-2);"><span class="pi-check" style="color:var(--success);">&#10003;</span> CareerByteCode Revenue Sharing</div>
+    </div>
+  </div>
+  <p style="text-align:center;color:var(--text-3);font-size:0.78rem;margin-top:var(--sp-3);font-family:var(--font-mono);">// All earnings flow through CareerByteCode on the same 30&ndash;50% revenue-share model</p>
+</div>
+</section>
+
+<!-- ==================== 365-DAY CHALLENGE ==================== -->
+<section class="section reveal" id="challenge">
+<div class="container">
+  <div class="section-header">
+    <div class="section-tag">grow &amp; earn</div>
+    <h2>The 365-Day <span class="text-gradient">Visibility Challenge</span></h2>
+    <p>Visibility is a habit, not an event. Do these every day and every week for a year, and you become impossible to ignore in your niche.</p>
+  </div>
+  <div class="features-grid">
+    <div class="card card--blue reveal">
+      <div class="journey-step__label">Every Day</div>
+      <h4>Daily Non-Negotiables</h4>
+      <ul class="topic-list" style="margin-top:var(--sp-2);">
+        <li>1 LinkedIn Post</li>
+        <li>1 Instagram Reel</li>
+        <li>1 Career Tip Video</li>
+        <li>1 Short YouTube Video</li>
+        <li>Answer 10 LinkedIn Comments</li>
+        <li>Connect with 20 Professionals</li>
+        <li>Comment on 10 Industry Posts</li>
+      </ul>
+    </div>
+    <div class="card card--purple reveal">
+      <div class="journey-step__label">Every Week</div>
+      <h4>Weekly Power Moves</h4>
+      <ul class="topic-list" style="margin-top:var(--sp-2);">
+        <li>1 Case Study</li>
+        <li>1 Live Session</li>
+        <li>1 Newsletter</li>
+        <li>1 Podcast</li>
+        <li>1 Blog</li>
+        <li>1 Mock Session</li>
+        <li>1 Expert Interview</li>
+        <li>1 Free Resource (PDF / Checklist)</li>
+      </ul>
+    </div>
+  </div>
+  <p style="text-align:center;color:var(--text-3);font-size:0.8rem;margin-top:var(--sp-4);">Consistency compounds. Each post, reel and session is a brick - in a year you'll have built a brand no one can take away.</p>
+</div>
+</section>
+
+<!-- ==================== 7-LEVEL GROWTH LADDER ==================== -->
+<section class="section reveal" id="ladder">
+<div class="container">
+  <div class="section-header">
+    <div class="section-tag">your progression</div>
+    <h2>The 7-Level <span class="text-gradient">Growth Ladder</span></h2>
+    <p>CareerByteCode doesn't graduate you and send you away. You climb a structured ladder - each level adding visibility, responsibility and new ways to earn.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Level</th><th>Role</th><th>Primary Focus</th><th>Earnings</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Level 1</strong></td><td>Learner</td><td>Complete training and personal branding</td><td>Learning stage</td></tr>
+        <tr><td><strong>Level 2</strong></td><td>Content Creator</td><td>Publish daily content and build visibility</td><td>Platform incentives &amp; referrals</td></tr>
+        <tr><td><strong>Level 3</strong></td><td>Community Contributor</td><td>Answer questions, mentor peers, host discussions</td><td>Revenue share for community activity</td></tr>
+        <tr><td><strong>Level 4</strong></td><td>Freelancer</td><td>Deliver client services and projects</td><td>Service-based income</td></tr>
+        <tr><td><strong>Level 5</strong></td><td>Mentor</td><td>Conduct workshops, reviews and coaching</td><td>Session fees &amp; mentoring revenue</td></tr>
+        <tr><td><strong>Level 6</strong></td><td>Creator Partner</td><td>Launch courses, podcasts, newsletters &amp; premium content</td><td>Revenue sharing on products &amp; client work</td></tr>
+        <tr><td><strong>Level 7</strong></td><td>Community Leader</td><td>Build a niche community, represent CareerByteCode</td><td>Multiple recurring income streams</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="text-align:center;color:var(--text-3);font-size:0.8rem;margin-top:var(--sp-4);">The goal: turn every graduate into a visible creator who produces content, serves a community, and earns through multiple streams - not just one-off client projects.</p>
+</div>
+</section>
+
+<!-- ==================== ENROLL CTA ==================== -->
+<section class="enroll-section reveal" id="enroll">
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="container" style="text-align:center;">
+    <h2 class="reveal" style="font-size:clamp(1.8rem,4vw,2.8rem);">Ready to go visible<br><span>and start earning?</span></h2>
+    <p class="reveal" style="max-width:580px;margin:var(--sp-2) auto 0;">Finished the freelancing course, or ready to begin? Message us on WhatsApp and our team will help you launch your creator journey and start earning with CareerByteCode.</p>
+    <div class="cta-checklist reveal">
+      <div class="cta-check-item"><span class="chk">&#10003;</span> Consistency</div>
+      <div class="cta-check-item"><span class="chk">&#10003;</span> A laptop or phone</div>
+      <div class="cta-check-item"><span class="chk">&#10003;</span> The willingness to show up</div>
+    </div>
+    <div class="hero__actions reveal" style="justify-content:center;">
+      <a class="btn btn--primary btn--lg btn--magnetic btn--glow" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer">Message us on WhatsApp &rarr;</a>
+      <a class="btn btn--whatsapp btn--lg btn--magnetic" href="https://chat.whatsapp.com/DwEhenstMxkLZikMVbHEVY" target="_blank" rel="noopener noreferrer">&#128172;&nbsp; Join WhatsApp Group</a>
+    </div>
+    <p class="cta-note-sm reveal">Free first &middot; Paid next &middot; Revenue share throughout</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer__title">We don't just teach skills - <em>we help you earn</em></div>
+  <div class="footer__sub">CareerByteCode &middot; Brand Yourself, Earn More &middot; Non-Tech Edition</div>
+  <div class="footer__links">
+    <a href="index.html">Home</a>
+    <a href="syllabus.html">Syllabus</a>
+    <a href="earn.html">Grow &amp; Earn</a>
+    <a href="https://www.linkedin.com/company/careerbytecode" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://github.com/careerbytecode" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://youtube.com/@CareerByteCode" target="_blank" rel="noopener noreferrer">YouTube</a>
+    <a href="https://chat.whatsapp.com/DwEhenstMxkLZikMVbHEVY" target="_blank" rel="noopener noreferrer">WhatsApp Group</a>
+  </div>
+  <div class="footer__email"><a href="mailto:sonali.k593@gmail.com">sonali.k593@gmail.com</a></div>
+  <div class="footer__copy">&copy; 2025 CareerByteCode. All rights reserved. &middot; Sonali Kurade &middot; +91 7620 774 352</div>
+</footer>
+
+<!-- MOBILE BOTTOM ENROLL BAR -->
+<div class="value-bottom-bar" aria-label="Contact us">
+  <div class="vbb-info">
+    <strong>Grow &amp; earn from home</strong>
+    <span>Free &rarr; Paid &middot; 30&ndash;50% revenue share</span>
+  </div>
+  <a class="vbb-btn" href="https://wa.me/917620774352" target="_blank" rel="noopener noreferrer">Join Now &rarr;</a>
+</div>
+
+<button class="btt" aria-label="Back to top" title="Back to top">&#x2191;</button>
+
+<script src="shared-premium.js" defer></script>
+</body>
+</html>
